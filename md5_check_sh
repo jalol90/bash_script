@@ -1,23 +1,24 @@
 #!/bin/bash
 
 read -p "Enter path for control:" pathcheck
-if [ ! -d $pathcheck ]
+if [ ! -d "$pathcheck" ]
     then
         echo "error directory not found!"
         exit 1
 fi
 
 read -p "enter path for result file:" pathresult
-mkdir -p $pathresult
+mkdir -p "$pathresult"
 
-name_file=$pathresult/$(basename $pathcheck)-"md5-sum.txt"
+name_file=$pathresult/$(basename "$pathcheck")-"md5-sum.txt"
 echo "file with result - $name_file"
 
 for file in "$pathcheck"/*
     do
-        if [ -f $file ]
+        if [ -f "$file" ]
             then
                 echo "file name -$file"
                 md5sum "$file" >>"$name_file"
         fi
     done
+echo "done"
