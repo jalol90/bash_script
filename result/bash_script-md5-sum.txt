@@ -1,0 +1,2 @@
+4f66e618a943cac102fdbe2a062b1ece */c/Users/ICH/Desktop/it_hub/uroki/Linux_&_Git/16 PR в Pycharm/bash_script/main.py
+a32949216583d2de82a03c1849855f12 */c/Users/ICH/Desktop/it_hub/uroki/Linux_&_Git/16 PR в Pycharm/bash_script/md5_check_sh
